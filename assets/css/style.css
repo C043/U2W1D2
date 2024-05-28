@@ -135,17 +135,23 @@ h1 {
   margin-bottom: 0.7em;
   position: relative;
   z-index: 2;
+  display: inline;
 }
 
 #title {
   position: relative;
+  display: inline;
+}
+
+article p:first-of-type {
+  margin-top: 1em;
 }
 
 .underline {
-  width: 89%;
+  width: 100%;
   position: absolute;
-  top: 92%;
-  right: 12%;
+  top: 94%;
+  right: 0%;
   opacity: 60%;
   z-index: 1;
 }
@@ -193,13 +199,13 @@ h1 + p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   h1 {
     font-size: 3.6rem;
   }
 
   .underline {
-    width: 77%;
+    top: 99%;
   }
 }
 
@@ -208,8 +214,7 @@ h1 + p {
     font-size: 3.3rem;
   }
   .underline {
-    width: 51%;
-    right: 4%;
+    width: 53%;
     top: 84%;
   }
 }
@@ -225,12 +230,6 @@ h1 + p {
 
   section h2 {
     font-size: 2em;
-  }
-
-  .underline {
-    width: 43%;
-    right: 19%;
-    top: 84%;
   }
 }
 
