@@ -106,8 +106,7 @@ main {
 
 section {
   background-color: #e3e3e3;
-  padding: 1.5em 1em;
-  margin-bottom: 2em;
+  padding: 2.5em 1em;
   position: relative;
 }
 
@@ -119,6 +118,11 @@ section h2 {
   font-weight: bold;
   background-color: #a3a3a3;
   padding: 0px 1em;
+  position: absolute;
+  display: block;
+  top: -8%;
+  left: 5%;
+  box-shadow: 1px 1px 1px #000000aa;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -216,6 +220,11 @@ h1 + p {
   }
   section {
     border-radius: 20px;
+    padding: 3.9em 1em;
+  }
+
+  section h2 {
+    font-size: 2em;
   }
 
   .underline {
@@ -262,7 +271,8 @@ iframe {
     display: inline-block;
     width: 50%;
     margin-inline: -2px;
-    vertical-align: middle;
+    vertical-align: top;
+    margin-top: 3em;
   }
 
   iframe {
