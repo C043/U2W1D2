@@ -188,7 +188,7 @@ article p:first-of-type {
 .underline {
   width: 100%;
   position: absolute;
-  top: 94%;
+  top: 95%;
   right: 0%;
   opacity: 60%;
   z-index: 1;
@@ -259,7 +259,7 @@ h1 + p {
   }
   .underline {
     width: 53%;
-    top: 84%;
+    top: 90%;
   }
   .fa-square-plus {
     bottom: unset;
