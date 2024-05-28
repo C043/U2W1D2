@@ -135,9 +135,10 @@ h1 {
 }
 
 .underline {
-  width: 92%;
+  width: 89%;
   position: absolute;
   top: 92%;
+  right: 12%;
   opacity: 60%;
   z-index: 1;
 }
