@@ -243,6 +243,12 @@ h1 + p {
   }
 }
 
+@media screen and (min-width: 804px) {
+  h1 {
+    font-size: 4.2em;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 3.3rem;
