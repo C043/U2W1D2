@@ -19,7 +19,11 @@ hr {
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
-  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -117,11 +121,25 @@ section h2 {
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 h1 {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   line-height: 1.2;
   font-weight: bold;
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
+  position: relative;
+  z-index: 2;
+}
+
+#title {
+  position: relative;
+}
+
+.underline {
+  width: 92%;
+  position: absolute;
+  top: 92%;
+  opacity: 60%;
+  z-index: 1;
 }
 
 p,
@@ -167,9 +185,24 @@ h1 + p {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 3.6rem;
+  }
+
+  .underline {
+    width: 77%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3.3rem;
+  }
+  .underline {
+    width: 51%;
+    right: 4%;
+    top: 84%;
   }
 }
 
@@ -180,6 +213,12 @@ h1 + p {
   section {
     border-radius: 20px;
   }
+
+  .underline {
+    width: 43%;
+    right: 19%;
+    top: 84%;
+  }
 }
 
 .imgLeft {
@@ -187,6 +226,7 @@ h1 + p {
   border: 4px solid #00a0c6;
   outline: 4px solid #a02571;
   padding: 3px;
+  float: left;
 }
 ul,
 ol {
@@ -329,7 +369,11 @@ aside div p:last-child {
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
-  background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
   box-shadow: 0 3px 3px #444;
   color: #f0f0f0;
   padding: 1em;
