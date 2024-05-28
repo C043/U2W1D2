@@ -146,6 +146,10 @@ h1 {
   display: inline;
 }
 
+h1 span {
+  display: inline-block;
+}
+
 .fa-square-caret-up,
 .fa-calendar-days,
 .fa-square-plus {
