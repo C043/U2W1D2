@@ -42,15 +42,16 @@ header {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1023px) {
   header .brand img {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   header {
     text-align: left;
+    position: relative;
   }
   header .brand,
   header nav,
@@ -66,6 +67,12 @@ header {
   }
   header .brand p {
     margin-bottom: 0;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 30%;
+    right: 5%;
   }
 }
 
@@ -146,7 +153,7 @@ h1 {
   backdrop-filter: blur(2px);
   position: fixed;
   right: -7px;
-  bottom: 1%;
+  bottom: 0.3em;
   padding: 0.35em;
   outline: 2px solid white;
   color: #f94d4d;
@@ -156,12 +163,12 @@ h1 {
 
 .fa-calendar-days {
   color: #0080a0;
-  bottom: 10%;
+  bottom: 3em;
 }
 
 .fa-square-plus {
   color: #0080a0;
-  bottom: 19%;
+  bottom: 5.7em;
 }
 
 #title {
@@ -243,6 +250,15 @@ h1 + p {
     width: 53%;
     top: 84%;
   }
+  .fa-square-plus {
+    bottom: unset;
+    top: 4em;
+  }
+
+  .fa-calendar-days {
+    bottom: unset;
+    top: 6em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -260,13 +276,13 @@ h1 + p {
 
   .fa-square-plus {
     bottom: unset;
-    top: 2%;
+    top: 1em;
   }
 
   .fa-calendar-days {
     bottom: unset;
-    top: 12%;
-  }
+    top: 3em;
+
 }
 
 .imgLeft {
